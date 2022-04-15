@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos no Js</title>
+    <style>
+        body{
+            width: 500px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            padding: 5px;
+        }
+        p{
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            text-align: justify;
+            line-height: 1.3em;
+        }
+        p.anotacao{
+            border: 3px solid green;
+            width: 400px;
+            background-color: black;
+            color: green;
+            padding: 10px;
+            margin: auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro passo no Js</h1>
+    <p>Olá, Mundo!</p>
+    <script>
+      var nome = window.prompt("Qual o seu nome?");
+      window.alert("Bem Vindo " + nome + " !"); // + usado para concatenação.
+    </script>
+    <p>O camando window.alert é um comando utilizado para abirir um pop up na janela atual, sendo ele não obrigatório seu uso.</p>
+    <p class="anotacao">Fiz um alerta no meu navegador, utiliazndo o comando script e usando o comando alert, fazenod saltar um pop up na minha tela :D</p>
+</body>
+</html>
