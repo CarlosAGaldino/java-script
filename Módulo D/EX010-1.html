@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font:normal 20px Arial;
+            width: 400px;
+            margin: auto;
+        }
+        main{
+            border: 2px solid blue;
+            border-radius: 5px;
+            background-color: cyan;
+        }
+        h1, p{
+            margin:20px 30px;
+        }
+        input#dest{
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        div#res{
+            margin: 10px 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Onde você vai?</h1>
+          <p>Destino: <input type="text" name="dest" id="dest">
+        <input type="button" value="verificar" onclick="verificar()"></p>
+        <div id="res"></div>
+    </main>
+
+    <script>
+        function verificar(){
+            var dest = window.document.getElementById("dest")
+            var res = document.querySelector("div#res")
+            //var pais = dest.value
+             //lembrar de pegar o valor da var, para poder ser usada.
+
+            if(dest.value == "BRASIL"){
+                res.innerText = `Indo para o ${dest.value} você será Brasileiro!`
+            }else{
+                res.innerText = `Indo para o ${dest.value} você será Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
