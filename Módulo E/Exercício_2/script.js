@@ -3,9 +3,10 @@ function tabuada(){
     let tab = document.getElementById("seltab")
     let res = document.querySelector ("res")
 
+    //validação
     if(numero.value.length == 0) {
-        alert(`[ERROR]`)
-    } else {
+        alert(`[ERROR]`) //erro caso não digitarmos valor
+    } else { //caso tenha um valor
         let n =Number(numero.value) 
         let c = 1
         tab.innerHTML = ``

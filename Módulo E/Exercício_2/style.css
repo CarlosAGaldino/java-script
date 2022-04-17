@@ -19,6 +19,9 @@ div{
     text-align: center;
     padding: 8px;
 }
+div > option{
+    margin-top: 10px;
+}
 #imagem{
     width: 250px;
     height: 250px;
