@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools" >What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+        //Criando nosso primeiro objeto:
+        const person = {
+            name: [`Bob`, `Smith`],
+            idade: 32,
+            bio : function(){ //Atributo que possui uma função como valor.
+                console.log(`${this.name[0]} ${this.name[1]} tem ${this.idade} anos de idade`);
+            },
+            apresentando: function(){//Aqui podemos observar o mesmo.
+                console.nome(`Oi meu nome é ${this.nome[0]}`);
+            }
+        };
+
+        //Para acessar cada um desses atributos:
+        person.name
+        person.name[0]
+        person.age
+        person.bio()
+        person.apresentacao()
+    </script>
+</html>
